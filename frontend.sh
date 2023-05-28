@@ -13,7 +13,7 @@ cd /usr/share/nginx/html &>>/tmp/roboshop.log
 echo -e "\e[35mUnzipping and Installing the copied roboshop frontend file\e[0m"
 unzip /tmp/frontend.zip &>>/tmp/roboshop.log
 
-cp roboshop.conf /etc/nginx/default.d/roboshop.conf
+cp /home/centos/roboshop-shell/roboshop.conf /etc/nginx/default.d/roboshop.conf
 
 echo -e "\e[33mStarting Nginx Service\e[0m"
 systemctl enable nginx &>>/tmp/roboshop.log

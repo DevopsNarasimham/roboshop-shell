@@ -1,5 +1,5 @@
 echo -e "\e[31mCopy Mongodb Repo File\e[0m"
-cp mongodb.repo /etc/yum.repos.d/mongo.repo
+cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongo.repo
 
 #&>>/tmp/roboshop.log
 
