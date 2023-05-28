@@ -12,6 +12,7 @@ cd /usr/share/nginx/html &>>/tmp/roboshop.log
 
 echo -e "\e[35mUnzipping and Installing the copied roboshop frontend file\e[0m"
 unzip /tmp/frontend.zip &>>/tmp/roboshop.log
+
 # Need to copy roboshop configure file
 
 echo -e "\e[33mStarting Nginx Service\e[0m"
