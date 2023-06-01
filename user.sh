@@ -13,11 +13,11 @@ mkdir /app &>>/tmp/roboshop.log
 
 echo -e "\e[35m Download Application Content\e[0m"
 curl -L -o /tmp/user.zip https://roboshop-artifacts.s3.amazonaws.com/user.zip &>>/tmp/roboshop.log
-cd /app &>>/tmp/roboshop.log
+cd /app
 
 echo -e "\e[36m Extract Application Content\e[0m"
 unzip /tmp/user.zip &>>/tmp/roboshop.log
-cd /app &>>/tmp/roboshop.log
+cd /app
 
 echo -e "\e[31m Install NodeJS Dependencies\e[0m"
 npm install &>>/tmp/roboshop.log
