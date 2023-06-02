@@ -12,7 +12,7 @@ curl -L -o /tmp/payment.zip https://roboshop-artifacts.s3.amazonaws.com/payment.
 cd /app &>>/tmp/roboshop.log
 
 echo -e "\e[35mExtract Application Content \e[0m"
-unzip /tmp/payment.zip &>>/tmp/roboshop.log
+unzip /tmp/payment.zip #&>>/tmp/roboshop.log
 
 echo -e "\e[36mInstall Application Dependencies \e[0m"
 cd /app &>>/tmp/roboshop.log
