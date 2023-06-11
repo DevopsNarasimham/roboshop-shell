@@ -11,6 +11,7 @@ echo -e "${color}Add Application User${nocolor}"
 useradd roboshop &>>${log_file}
 
 echo -e "${color}Create Application Directory ${nocolor}"
+rm -rf ${app_path} &>>${log_file}
 mkdir ${app_path} &>>${log_file}
 
 echo -e "${color}Download Application Content${nocolor}"
